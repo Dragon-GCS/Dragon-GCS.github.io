@@ -75,7 +75,7 @@ fancybox: false
 # Search
 search:
   insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-  baidu: false # you need to disable other search engines to use Baidu search
+  baidu: true # you need to disable other search engines to use Baidu search
 
 # Donate
 donate:
