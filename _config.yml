@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false  # 新建文章时自动生成assert文件夹，便于markdown引用图片等资源
+post_asset_folder: true  # 新建文章时自动生成assert文件夹，便于markdown引用图片等资源
 marked:
   prependRoot: true       # 可以使用相对路径直接导入图片[image1](image.jpg)
   postAsset: true         # build时一同打包assert文件

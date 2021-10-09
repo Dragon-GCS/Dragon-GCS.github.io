@@ -143,13 +143,7 @@ plugins:
   google_site_verification: # enter Google site verification code
   baidu_analytics: # enter Baidu Analytics hash key
   tencent_analytics: 
-  
-# Miscellaneous
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:  
-  
+
 # profile
 profile:
   enabled: true # Whether to show profile bar
