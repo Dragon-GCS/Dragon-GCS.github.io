@@ -1,0 +1,189 @@
+# menu
+menu:
+  Home: .
+  Archives: archives  # 归档
+  Categories: categories  # 分类
+  Tags: tags  # 标签
+  Repository: repository  # github repositories
+  Links: links  # 友链
+  About: about  # 关于
+
+# Enable/Disable menu icons
+menu_icons:
+  enable: true  # 是否启用导航菜单图标
+  home: icon-home-fill
+  archives: icon-archives-fill
+  categories: icon-folder
+  tags: icon-tags
+  repository: icon-project
+  books: icon-book-fill
+  links: icon-friendship
+  about: icon-cup-fill
+
+# rss
+rss: /atom.xml
+
+# Site
+site:
+  logo:
+    enabled: true
+    width: 40
+    height: 40
+    url: ../images/logo.png
+  title: Dlog # 页面title
+  favicon: /favicon.png
+  board: <p>欢迎交流与分享经验!</p> # 站点公告
+  copyright: false # 底部版权信息
+
+# config
+config:
+  skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
+  layout: main-center # 布局方式 main-left main-center main-right
+  toc: true # 是否开启文章章节目录导航
+  menu_highlight: true # 是否开启当前菜单高亮显示
+  thumbnail: false # enable posts thumbnail, options: true, false
+  excerpt_link: Read More
+
+# Pagination
+pagination:
+  number: false
+  prev: 
+    alwayShow: true
+  next:
+    alwayShow: true
+
+# Sidebar
+sidebar: right
+widgets:
+  - board  
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
+# Fancybox
+fancybox: false
+
+# Search
+search:
+  insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+  baidu: false # you need to disable other search engines to use Baidu search
+
+# Donate
+donate:
+  enable: true
+  # 微信打赏
+  wechatpay:
+    qrcode: images/donate/wechatpayimg.png
+    title: 微信支付
+  # 支付宝打赏
+  alipay: 
+    qrcode: images/donate/alipayimg.png 
+    title: 支付宝
+
+# Share
+# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
+share:
+  enable: true  # 是否启用分享
+  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
+
+# Github
+github: 
+  username: Dragon-GCS  # github username
+
+# Comment
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+comment:
+  type: valine  # 启用哪种评论系统
+  valine: # Valine. https://valine.js.org
+    appid:  vfrACLqwdBubDHyqKltE9JVe-gzGzoHsz # your leancloud application appid
+    appkey:  RKAodVWY24Xzzx3EpP1JG5z4 # your leancloud application appkey
+    notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+    verify: false # Verification code
+    placeholder: Just go go # comment box placeholder
+    avatar: mm # gravatar style
+    meta: nick,mail,link # custom comment header
+    pageSize: 10 # pagination size
+    visitor: false # Article reading statistic https://valine.js.org/visitor.html
+
+douban:
+  user: # 豆瓣用户名
+  start: 0 # 从哪一条记录开始
+  count: 100 # 获取豆瓣书单数据条数
+  apikey: # 豆瓣apikey
+  
+# PV
+pv:
+  busuanzi:
+    enable: true  # 不蒜子统计
+  leancloud:
+    enable: false  # leancloud统计
+    app_id: # leancloud <AppID>
+    app_key: # leancloud <AppKey>
+        
+# wordcount
+postCount:
+  enable: true
+  wordcount: true  # 文章字数统计
+  min2read: true  # 阅读时长预计 
+
+# Plugins
+plugins:
+  google_analytics: # enter the tracking ID for your Google Analytics
+  google_site_verification: # enter Google site verification code
+  baidu_analytics: # enter Baidu Analytics hash key
+  tencent_analytics: 
+  
+# Miscellaneous
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:  
+  
+# profile
+profile:
+  enabled: true # Whether to show profile bar
+  avatar: images/avatar.jpg
+  gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+  author: DragonZ
+  author_title: Bioenginner
+  author_description: 个人简介。
+  location: Beijing, China
+  follow: https://github.com/Dragon-GCS
+  # Social Links
+  social:
+    links:
+      github: https://github.com/Dragon-GCS
+    link_tooltip: true # enable the social link tooltip, options: true, false
+  # My Skills 
+  skills:
+    Git: ★★★☆☆
+    Python: ★★★☆☆
+    Javascript: ★★★☆☆
+    HTML+CSS: ★★★☆☆
+    DeepLearning: ★★★☆☆
+    Django: ★★★☆☆
+    Primere: ★★★☆☆
+  # My Personal Links
+  links:
+    Github: https://github.com/Dragon-GCS
+  # My Personal Labels
+  labels:
+    # - 前端
+  # My Personal Works
+  works:
+  # My Personal Projects
+  projects:
+    生物序列分析包: https://github.com/Dragon-GCS/BioSequences
+    基于Django的个人网盘: https://github.com/Dragon-GCS/DragonSite
+    DNN预测英雄联盟S11胜率: https://github.com/Dragon-GCS/LPLS11Predict
