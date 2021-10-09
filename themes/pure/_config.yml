@@ -167,12 +167,13 @@ profile:
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
-    Git: ★★★☆☆
     Python: ★★★☆☆
     Javascript: ★★★☆☆
     HTML+CSS: ★★★☆☆
     DeepLearning: ★★★☆☆
     Django: ★★★☆☆
+    GeneticEngineering: ★★★☆☆
+    ProteinAnalysis: ★★★☆☆
     Primere: ★★★☆☆
   # My Personal Links
   links:
