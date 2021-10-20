@@ -122,6 +122,7 @@ if __name__ == '__main__':
     wf = WaterFall(csv_filename)
     wf.show()
 ```
+![result](result.png)
 
 ## Matploblib显示所有可用颜色的方法
 
