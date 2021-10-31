@@ -21,7 +21,7 @@ pip install tensorflow
 
 > 如果需要使用`pyTorch`，则后续选择CUDA版本时应该参照[PyTorch官网](https://pytorch.org/get-started/locally/)
 
-> 如果需要同时使用`Tensorflow`和`pyTorch`，则后续选择CUDA版本的时候应尽量选择一个能够同时用于`pyTorch`和`Tensorflow`的版本。所有版本的`pyTorch`支持的CUDA可以在这里[https://pytorch.org/get-started/previous-versions/](https://pytorch.org/get-started/previous-versions/)查询。需要指出的是`pyTorch`所用的CUDA需要严格按照官网给出的CUDA版本号进行安装，而`Tensorflow`给出个CUDA版本号仅为官方验证可用的版本号，所以其他版本的CUDA也可能可以用于`Tensorflow`，但需要自行安装尝试。
+> 如果需要同时使用`Tensorflow`和`pyTorch`，则后续选择CUDA版本的时候应尽量选择一个能够同时用于`pyTorch`和`Tensorflow`的版本。所有版本的`pyTorch`支持的CUDA可以在[https://pytorch.org/get-started/previous-versions/](https://pytorch.org/get-started/previous-versions/)查询。需要指出的是`pyTorch`所用的CUDA需要严格按照官网给出的CUDA版本号进行安装，而`Tensorflow`给出个CUDA版本号仅为官方验证可用的版本号，所以其他版本的CUDA也可能可以用于`Tensorflow`，但需要自行安装尝试。
 
 ## CUDA与cuDNN的安装
 
@@ -29,19 +29,27 @@ CUDA为Nvida的开发工具，也叫CUDA Toolkit，cuDNN为Tensorflow运行时�
 
 ###  确认显卡型号
 
-安装前需要确认自己的显卡是否支持CUDA，Nvida的显卡可以在[这里](https://developer.nvidia.com/cuda-gpus)查看对应的型号是否支持CUDA，未在列表的显卡也可进行安装尝试，如本人显卡为`GTX 1660 super`，安装CUDA后也可正常使用Tensorflow。
+安装前需要确认自己的显卡是否支持CUDA，Nvida的显卡可以在官网查看对应的型号是否支持CUDA，未在列表的显卡也可进行安装尝试，如本人显卡为`GTX 1660 super`，安装CUDA后也可正常使用Tensorflow。
 
-Tensorflow官网上并未说明对AMD显卡的支持。
+* 查看地址：[https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)
+
+* Tensorflow官网上并未说明对**AMD显卡**的支持。
 
 ### 确认所需的CUDA与cuDNN版本（**cuDNN版本必须与CUDA版本对应**）
 
-不同版本的Tensorflow对应的cuDNN与CUDA的版本参见下表，表中对应版本号为官方测试通过的版本号，尽量保持一致。来源：[Tensorflow](https://tensorflow.google.cn/install/source_windows)
+不同版本的Tensorflow对应的cuDNN与CUDA的版本参见下表，表中对应版本号为官方测试通过的版本号，尽量保持一致。
+
+来源：[https://tensorflow.google.cn/install/source_windows](https://tensorflow.google.cn/install/source_windows)
 
 <img src="不同tf版本对应的cuDNN与CUDA.png"  alt="logo" style="zoom: 67%" align="center">
 
 ### 下载CUDA与cuDNN
 
-确认自己的显卡支持CUDA后，前往Nvida官网下载自己所需版本的[CUDA工具包](https://developer.nvidia.com/cuda-toolkit-archive)和[cuDNN](https://developer.nvidia.com/rdp/cudnn-archive)（需要注册一个Nvida的账号）
+确认自己的显卡支持CUDA后，前往Nvida官网下载自己所需版本的**CUDA工具包**和**cuDNN依赖**
+
+* CUDA工具包：[https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
+
+* cuDNN依赖：[https://developer.nvidia.com/rdp/cudnn-archive](https://developer.nvidia.com/rdp/cudnn-archive)（需要注册一个Nvida的账号）
 
 **1. CUDA下载**
 
