@@ -105,4 +105,7 @@ theme: pure
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Dragon-GCS/Dragon-GCS.github.io
+  branch: gh-pages
+  messages: GetPaper_2.0
