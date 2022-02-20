@@ -13,6 +13,7 @@ categories:
 ## Tensorflow的安装
 
 Tensorflow在`1.15`版本后已经将CPU版本和GPU版本进行了合并，可以很简单的通过`pip`来进行安装
+
 ```powershell
 pip install tensorflow
 ```
@@ -20,20 +21,29 @@ pip install tensorflow
 安装完成后会自动检测系统中是否已经安装了CUDA套件，在检测到CUDA时，所有计算会优先使用GPU进行计算。
 
 > 如果需要使用`pyTorch`，则后续选择CUDA版本时应该参照[PyTorch官网](https://pytorch.org/get-started/locally/)
-
 > 如果需要同时使用`Tensorflow`和`pyTorch`，则后续选择CUDA版本的时候应尽量选择一个能够同时用于`pyTorch`和`Tensorflow`的版本。所有版本的`pyTorch`支持的CUDA可以在[https://pytorch.org/get-started/previous-versions/](https://pytorch.org/get-started/previous-versions/)查询。需要指出的是`pyTorch`所用的CUDA需要严格按照官网给出的CUDA版本号进行安装，而`Tensorflow`给出个CUDA版本号仅为官方验证可用的版本号，所以其他版本的CUDA也可能可以用于`Tensorflow`，但需要自行安装尝试。
 
 ## CUDA与cuDNN的安装
 
 CUDA为Nvida的开发工具，也叫CUDA Toolkit，cuDNN为Tensorflow运行时需要的依赖文件。网上不少文章安装前都要检查一下本机的英伟达驱动版本信息，本人在测试时发现不需要进行检查，只要确认自己的显卡支持CUDA并安装正确版本的CUDA和cuDNN即可。下面的步骤为如何确认自己的显卡是否支持CUDA以及如何确定自己需要的CUDA和cuDNN版本号
 
-###  确认显卡型号
+### 确认显卡是否支持CUDA
 
 安装前需要确认自己的显卡是否支持CUDA，Nvida的显卡可以在官网查看对应的型号是否支持CUDA，未在列表的显卡也可进行安装尝试，如本人显卡为`GTX 1660 super`，安装CUDA后也可正常使用Tensorflow。
 
 * 查看地址：[https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)
 
 * Tensorflow官网上并未说明对**AMD显卡**的支持。
+
+### 确认显卡驱动版本
+
+在桌面右键选择`NVDIA控制面板`，查看自己当前的版本信息。之后根据[官网文档](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)确定自己的显卡能够支持的CUDA版本。
+
+<img src="查看当前驱动版本.png"  alt="logo" style="zoom: 67%" align="center">
+
+比如我的驱动版本为`471.41`，根据文档显示我可以安装`CUDA 11.4 Updata2`以下的所有版本。
+
+<img src="查看当前驱动版本2.png"  alt="logo" style="zoom: 67%" align="center">
 
 ### 确认所需的CUDA与cuDNN版本（**cuDNN版本必须与CUDA版本对应**）
 
@@ -108,6 +118,3 @@ tf.config.list_physical_devices()
 也可以使用`tf.test.is_gpu_available()`进行检测，返回`True`说明GPU可用。
 
 <h2 align="center">写文不易，求个打赏~~</h2>  
-
-
-
