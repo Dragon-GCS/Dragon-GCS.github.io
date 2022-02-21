@@ -33,7 +33,7 @@ site:
   title: Dlog # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
-  copyright: false # 底部版权信息
+  copyright: true # 底部版权信息
 
 # config
 config:
@@ -55,12 +55,12 @@ pagination:
 # Sidebar
 sidebar: right
 widgets:
-  - board  
+  - board
+  - recent_posts
+  - archive
   - category
   - tag
   - tagcloud
-  - archive
-  - recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -75,7 +75,7 @@ fancybox: false
 # Search
 search:
   insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-  baidu: true # you need to disable other search engines to use Baidu search
+  baidu: false # you need to disable other search engines to use Baidu search
 
 # Donate
 donate:
@@ -121,7 +121,7 @@ douban:
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
   apikey: # 豆瓣apikey
-  
+
 # PV
 pv:
   busuanzi:
@@ -130,7 +130,7 @@ pv:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
     app_key: # leancloud <AppKey>
-        
+
 # wordcount
 postCount:
   enable: true
@@ -151,7 +151,7 @@ profile:
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: DragonZ
   author_title: Bioenginner
-  author_description: 个人简介。
+  author_description: A common human。
   location: Beijing, China
   follow: https://github.com/Dragon-GCS
   # Social Links
