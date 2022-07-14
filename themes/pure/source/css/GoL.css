@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --gol-dead: #fff;
+    --gol-live: #000;
+}
+#GoL {
+    margin: 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: var(--gol-dead);
+    color: var(--gol-live);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+#GoL h1 {
+    margin: 0;
+    padding: 0;
+}
+#GoL .game {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(255,255,255),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+#GoL .game .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+#GoL .game .control input {
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#GoL .game .control input[type="range"] {
+    margin-top: 0;
+}
+#GoL .game .control div {
+    font-size: 12px;
+}
