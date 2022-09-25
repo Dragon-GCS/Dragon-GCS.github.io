@@ -39,11 +39,11 @@ CUDA为Nvida的开发工具，也叫CUDA Toolkit，cuDNN为Tensorflow运行时�
 
 在桌面右键选择`NVDIA控制面板`，查看自己当前的版本信息。之后根据[官网文档](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)确定自己的显卡能够支持的CUDA版本。
 
-<img src="查看当前驱动版本.png"  alt="logo" style="zoom: 67%" align="center">
+<img src="10-29-Tensorflow与CUDA的安装/./查看当前驱动版本.png"  alt="logo" style="zoom: 67%" align="center">
 
 比如我的驱动版本为`471.41`，根据文档显示我可以安装`CUDA 11.4 Updata2`以下的所有版本。
 
-<img src="查看当前驱动版本2.png"  alt="logo" style="zoom: 67%" align="center">
+<img src="10-29-Tensorflow与CUDA的安装/./查看当前驱动版本2.png"  alt="logo" style="zoom: 67%" align="center">
 
 ### 确认所需的CUDA与cuDNN版本（**cuDNN版本必须与CUDA版本对应**）
 
@@ -51,7 +51,7 @@ CUDA为Nvida的开发工具，也叫CUDA Toolkit，cuDNN为Tensorflow运行时�
 
 来源：[https://tensorflow.google.cn/install/source_windows](https://tensorflow.google.cn/install/source_windows)
 
-<img src="不同tf版本对应的cuDNN与CUDA.png"  alt="logo" style="zoom: 67%" align="center">
+<img src="10-29-Tensorflow与CUDA的安装/不同tf版本对应的cuDNN与CUDA.png"  alt="logo" style="zoom: 67%" align="center">
 
 ### 下载CUDA与cuDNN
 
@@ -65,17 +65,17 @@ CUDA为Nvida的开发工具，也叫CUDA Toolkit，cuDNN为Tensorflow运行时�
 
 打开官网页面后会看到所有版本的CUDA工具包，我这里选择的是`11.2.2`
 
-<img src="CUDA下载-1.png" alt="CUDA下载-1" align="center" />
+<img src="10-29-Tensorflow与CUDA的安装/CUDA下载-1.png" alt="CUDA下载-1" align="center" />
 
 接下来选择对应的系统版本和安装方式，最后点击下载等待下载完成。
 
-<img src="CUDA下载-2.png" alt="CUDA下载-1" align="center"/>
+<img src="10-29-Tensorflow与CUDA的安装/CUDA下载-2.png" alt="CUDA下载-1" align="center"/>
 
 **2. cuDNN下载**
 
 在cuDNN的列表中选择支持`11.1`CUDA的`8.1.1`windows版本
 
-<img src="cuDNN下载-1.png" alt="cuDNN下载-1" align="center" style="zoom: 50%"/>
+<img src="10-29-Tensorflow与CUDA的安装/cuDNN下载-1.png" alt="cuDNN下载-1" align="center" style="zoom: 50%"/>
 
 ## 安装CUDA
 
@@ -83,7 +83,7 @@ CUDA为Nvida的开发工具，也叫CUDA Toolkit，cuDNN为Tensorflow运行时�
 
 打开下载好的CUDA安装文件，按下边的流程进行安装。
 
-<img src="CUDA安装.png" alt="CUDA安装" align="center" style="zoom: 50%"/>
+<img src="10-29-Tensorflow与CUDA的安装/CUDA安装.png" alt="CUDA安装" align="center" style="zoom: 50%"/>
 
 全部设置完成后点击下一步并等待安装完成后即可
 
@@ -91,17 +91,17 @@ CUDA为Nvida的开发工具，也叫CUDA Toolkit，cuDNN为Tensorflow运行时�
 
 cuDNN下载完成后是一个压缩包，打开压缩包并将其内容解压至刚刚安装的*CUDA Development*文件夹内即可。如果弹出**是否合并文件夹**提示点击确定即可。
 
-<img src="cuDNN安装.png" alt="cuDNN安装" align="center" style="zoom: 50%"/>
+<img src="10-29-Tensorflow与CUDA的安装/cuDNN安装.png" alt="cuDNN安装" align="center" style="zoom: 50%"/>
 
 **3. 设置环境变量**
 
 打开系统的环境变量设置，CUDA安装时应该会在系统变量中自动添加两个CUDA_PATH变量，如果未添加则自己手动进行添加。
 
-<img src="设置环境变量-1.png" alt="设置环境变量-1" align="center" style="zoom: 50%"/>
+<img src="10-29-Tensorflow与CUDA的安装/设置环境变量-1.png" alt="设置环境变量-1" align="center" style="zoom: 50%"/>
 
 系统变量确认正确后双击用户变量中的`Path`（或者选中后点击编辑），在弹出的变量设置窗口添加两个新的路径，分别是`<CUDA_Development_Path>\bin`和`<CUDA_Development_Path>\lib\x64`。`<CUDA_Development_Path>`替换为刚刚记下的CUDA安装路径。（没有意外的应该与系统变量中的`CUDA_PATH`一致，所以建议写`%CUDA_PATH%\bin`和`%CUDA_PATH%\lib\x64`）
 
-<img src="设置环境变量-2.png" alt="设置环境变量-2" align="center" style="zoom: 50%"/>
+<img src="10-29-Tensorflow与CUDA的安装/设置环境变量-2.png" alt="设置环境变量-2" align="center" style="zoom: 50%"/>
 
 ## 测试GPU是否可用
 
