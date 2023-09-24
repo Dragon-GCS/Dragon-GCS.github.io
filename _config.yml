@@ -124,4 +124,3 @@ deploy:
   type: git
   repo: https://github.com/Dragon-GCS/Dragon-GCS.github.io
   branch: gh-pages
-  messages: GetPaper_2.0
