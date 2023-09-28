@@ -49,6 +49,7 @@ future: true
 highlight:
   enable: true
   line_number: true
+  line_threshold: 10
   auto_detect: false
   tab_replace: ''
   wrap: true

@@ -150,8 +150,8 @@ profile:
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: DragonZ
-  author_title: Bioenginner
-  author_description: A common human。
+  author_title: BioEngineer&DataEngineer
+  author_description: An ordinary human。
   location: Beijing, China
   follow: https://github.com/Dragon-GCS
   # Social Links
@@ -179,6 +179,7 @@ profile:
   works:
   # My Personal Projects
   projects:
+    简易包管理器: https://github.com/Dragon-GCS/Start
     生物序列分析包: https://github.com/Dragon-GCS/BioSequences
     基于Django的个人网盘: https://github.com/Dragon-GCS/DragonSite
     DNN预测英雄联盟S11胜率: https://github.com/Dragon-GCS/LPLS11Predict
