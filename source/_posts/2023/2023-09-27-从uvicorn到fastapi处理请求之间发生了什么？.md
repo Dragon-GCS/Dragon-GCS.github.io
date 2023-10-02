@@ -8,7 +8,7 @@ categories:
     - Learning
 ---
 
-<!-- cspell: ignore uvicorn elif Multiprocess isinstance asgi asyncio Starlette -->
+<!-- cspell: ignore uvicorn elif Multiprocess isinstance asgi asyncio Starlette threadpool -->
 > 十一放假，在家学习
 
 [FastAPI](https://fastapi.tiangolo.com/)是一个基于seattle的异步web框架， 据说其速度和go语言相当。

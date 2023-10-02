@@ -14,10 +14,8 @@ categories:
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from matplotlib.collections import PolyCollection	# 用于绘制三维图像
+from matplotlib.collections import PolyCollection # 用于绘制三维图像
 ```
-
-
 
 首先对绘制的图像进行一下设置，绘制数据如果有变化，在这里更改相应的设置即可
 
@@ -55,7 +53,7 @@ Z_range = (0, 20000)                            # Z轴范围（最小值， 最�
 class WaterFall:
     def __init__(self, filename:str,) -> None:
         self.raw_data = pd.read_csv(filename, sep="\t").values
-        self.data_process()	# 处理数据
+        self.data_process() # 处理数据
 ```
 
 预处理数据，转换为三维折线图所需要的格式
@@ -77,7 +75,7 @@ class WaterFall:
         # [[X, Y1], [X, Y2].....]
         # 其中每组数据的Y开头和结尾都必须是0，否则会画不出图像
         # 因为需要提前在数据开头和结尾添加一行数据0，x对应的为X的最小值和最大值
-		
+  
 ```
 
 绘制曲线
@@ -86,18 +84,18 @@ class WaterFall:
     
     def show(self):
         # 选择绘制模式为3D, 设置图片大小（英寸）和分辨率（dot per inch)
-        canvas = plt.figure(figsize=(12,8), dpi=150).add_subplot(projection='3d')					
+        canvas = plt.figure(figsize=(12,8), dpi=150).add_subplot(projection='3d')     
         # 设置X, Y, Z轴的比例
-        canvas.set_box_aspect(aspect = (1,1.3,0.8))							
-        canvas.add_collection3d(PolyCollection(self.data[::-1], **CONFIG),	# 由于数据为逆序，这里将数据倒置
+        canvas.set_box_aspect(aspect = (1,1.3,0.8))       
+        canvas.add_collection3d(PolyCollection(self.data[::-1], **CONFIG), # 由于数据为逆序，这里将数据倒置
                                 # Z轴（X，Y之外的第三维度，非实际Z轴）为需要绘制折线图的数量
-                                zs = range(len(self.data)),	
+                                zs = range(len(self.data)), 
                                 # 设置Z轴显示Y数据
-                                zdir = 'y')		
+                                zdir = 'y')  
         # 设置字体
-        plt.rcParams["font.sans-serif"] = FONTS	
+        plt.rcParams["font.sans-serif"] = FONTS 
         # 设置坐标轴标题
-        canvas.set_xlabel(X_label)						
+        canvas.set_xlabel(X_label)      
         canvas.set_ylabel(Y_label)
         canvas.set_zlabel(Z_laebl, labelpad=-15)
         # 设置坐标轴显示范围
@@ -124,6 +122,7 @@ if __name__ == '__main__':
     wf = WaterFall(csv_filename)
     wf.show()
 ```
+
 ![result](result.png)
 
 ## Matploblib显示所有可用颜色的方法
