@@ -1,4 +1,5 @@
 ---
+toc: true
 title: ubuntu(wsl2)下编译Python3.10
 date: 2023-04-09 23:40:04
 tags: Linux
