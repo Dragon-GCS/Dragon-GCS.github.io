@@ -6,7 +6,7 @@
   <link href="https://dragon-gcs.github.io/atom.xml" rel="self"/>
   
   <link href="https://dragon-gcs.github.io/"/>
-  <updated>2024-03-05T12:34:56.000Z</updated>
+  <updated>2024-06-14T00:12:21.000Z</updated>
   <id>https://dragon-gcs.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rust相关资料</title>
+    <link href="https://dragon-gcs.github.io/2024/06-14-Rust%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99"/>
+    <id>https://dragon-gcs.github.io/2024/06-14-Rust%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99</id>
+    <published>2024-06-14T00:12:21.000Z</published>
+    <updated>2024-06-14T00:12:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Rust学习过程中一些资料的整理</p><ul><li>Serde属性大全: <a href="https://blog.wangjunfeng.com/post/2024/rust-serde">Rust序列化、反序列化方案：Serde</a></li><li>Rust中<code>Result</code>,<code>Option</code>的使用: <a href="https://doc.rust-lang.org/std/result/">Result官方文档</a> <a href="https://doc.rust-lang.org/std/option/">Option官方文档</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Rust学习过程中一些资料的整理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Serde属性大全: &lt;a href=&quot;https://blog.wangjunfeng.com/post/2024/rust-serde&quot;&gt;Rust序列化、反序列化方案：Serde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ru</summary>
+      
+    
+    
+    
+    <category term="Learning" scheme="https://dragon-gcs.github.io/categories/Learning/"/>
+    
+    
+    <category term="Rust" scheme="https://dragon-gcs.github.io/tags/Rust/"/>
+    
+  </entry>
   
   <entry>
     <title>万物皆可Rss</title>
