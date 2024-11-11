@@ -6,7 +6,7 @@
   <link href="https://dragon-gcs.github.io/atom.xml" rel="self"/>
   
   <link href="https://dragon-gcs.github.io/"/>
-  <updated>2024-06-14T00:12:21.000Z</updated>
+  <updated>2024-06-29T02:32:24.000Z</updated>
   <id>https://dragon-gcs.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eu.org免费域名注册</title>
+    <link href="https://dragon-gcs.github.io/2024/06-29-eu.org%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C"/>
+    <id>https://dragon-gcs.github.io/2024/06-29-eu.org%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C</id>
+    <published>2024-06-29T02:32:24.000Z</published>
+    <updated>2024-06-29T02:32:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>eu.org</code>是一个免费的域名提供商，可以申请以<code>.eu.org</code>结尾的域名，注册过程比较简单，但是审核时间较长，需要耐心等待。注册完成后可以使用<code>cloudflare</code>或<code>dnspod</code>等dns服务商提供的免费dns服务，实现域名解析。</p><blockquote><p><code>register.us.kg</code> 也可以提供免费域名，流程和eu.org类似，但是注册后的域名是以<code>.us.kg</code>结尾的。</p><ul><li>优点：不需要漫长的等待时间。<code>eu.org</code>半年也不一定能审核通过。</li><li>缺点：即使开了代理，访问网站也会不稳定，比较看运行。</li></ul></blockquote><h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p>域名注册地址: <a href="https://nic.eu.org/">https://nic.eu.org/</a>, 首页长下边这样, 网站建于1996年，没有太多钱维护，还是上世纪的UI。</p><p><img src="/2024/06-29-eu.org%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C/%E9%A6%96%E9%A1%B5.png" alt="首页"></p><p>点击<code>here</code>进入下边的注册页面。</p><p><img src="/2024/06-29-eu.org%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C/%E6%B3%A8%E5%86%8C%E9%A1%B5.png" alt="注册页"></p><p>红框部分不需要填，只需要填写以下部分即可</p><ul><li>姓名，可能名字中间要有空格才能通过</li><li>邮箱，用于接收验证邮件</li><li>地址，从小到大填三个就可以</li><li>国家，试了下填中国不影响注册</li><li>密码</li></ul><p>注册后会收到一封验证邮件，点击验证链接即可。</p><h2 id="DNS服务申请"><a href="#DNS服务申请" class="headerlink" title="DNS服务申请"></a>DNS服务申请</h2><p>网上有很多详细的<a href="https://www.bilibili.com/video/BV1Mz421e76M">教程</a>，这里只是简单描述下。注册一个<code>cloudflare</code>账号，登录后点击添加站点。</p><ul><li>第一步输入你准备申请的域名，检查通过后进入下一步</li><li>第二步确认计划选择最下边的免费计划</li><li>第三步扫描该域名当前的dns，如果你的域名没人注册，那扫描结果应该为空</li><li>第四步激活，这里会显示两个名称服务器，复制下来，后续会用到</li><li>最后一步要等域名申请下来才能彻底完成</li></ul><h2 id="注册域名"><a href="#注册域名" class="headerlink" title="注册域名"></a>注册域名</h2><p>注册完成后会生成一个 <em>-Free</em> 结尾的账号，用该账号登录后，点击<code>New domain</code>进入域名申请页面。</p><p><img src="/2024/06-29-eu.org%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C/%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7%E9%A1%B5%E9%9D%A2.png" alt="域名申请页面"></p><ul><li>第一个红框要填你需要注册域名全称：<code>example.eu.org</code>，结尾除了<code>.eu.org</code>也可以使用一些带有国名的后缀，如<code>.fr.eu.org</code>。详细列表可以在<a href="https://nic.eu.org/opendomains.html">这里</a>查看。</li><li>最后的Name servers是用来验证域名的dns服务器，可以用<code>cloudflare</code>或<code>dnspod</code>提供的免费dns服务，我这里使用的是刚才在<code>cloudflare</code>上获取的两个名称服务器。</li><li>填写完成后点击提交，没问题的会在新页面里最后几行里显示一个<code>request-id</code>，表示申请已经提交，等待后续审核通过即可。</li></ul><p><img src="/2024/06-29-eu.org%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C/%E6%B3%A8%E5%86%8C%E7%BB%93%E6%9E%9C.png" alt="注册结果"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;code&gt;eu.org&lt;/code&gt;是一个免费的域名提供商，可以申请以&lt;code&gt;.eu.org&lt;/code&gt;结尾的域名，注册过程比较简单，但是审核时间较长，需要耐心等待。注册完成后可以使用&lt;code&gt;cloudflare&lt;/code&gt;或&lt;code&gt;dnspod&lt;/cod</summary>
+      
+    
+    
+    
+    <category term="Website" scheme="https://dragon-gcs.github.io/categories/Website/"/>
+    
+    
+    <category term="dns" scheme="https://dragon-gcs.github.io/tags/dns/"/>
+    
+    <category term="cloudflare" scheme="https://dragon-gcs.github.io/tags/cloudflare/"/>
+    
+    <category term="domain" scheme="https://dragon-gcs.github.io/tags/domain/"/>
+    
+  </entry>
   
   <entry>
     <title>Rust相关资料</title>
