@@ -150,7 +150,7 @@ profile:
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: DragonZ
-  author_title: BioEngineer&DataEngineer
+  author_title: AIDeveloper&DataEngineer
   author_description: An ordinary human。
   location: Beijing, China
   follow: https://github.com/Dragon-GCS
